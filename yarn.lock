@@ -2359,7 +2359,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:^20":
+"@types/node@npm:^20.8.7":
   version: 20.8.7
   resolution: "@types/node@npm:20.8.7"
   dependencies:
@@ -2375,7 +2375,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react-dom@npm:^18":
+"@types/react-dom@npm:^18.2.14":
   version: 18.2.14
   resolution: "@types/react-dom@npm:18.2.14"
   dependencies:
@@ -2384,7 +2384,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:*, @types/react@npm:^18":
+"@types/react@npm:*, @types/react@npm:^18.2.31":
   version: 18.2.31
   resolution: "@types/react@npm:18.2.31"
   dependencies:
@@ -2508,7 +2508,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"autoprefixer@npm:^10":
+"autoprefixer@npm:^10.4.16":
   version: 10.4.16
   resolution: "autoprefixer@npm:10.4.16"
   dependencies:
@@ -3902,7 +3902,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss@npm:8.4.31, postcss@npm:^8, postcss@npm:^8.4.23":
+"postcss@npm:8.4.31, postcss@npm:^8.4.23, postcss@npm:^8.4.31":
   version: 8.4.31
   resolution: "postcss@npm:8.4.31"
   dependencies:
@@ -3992,7 +3992,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-dom@npm:^18":
+"react-dom@npm:^18.2.0":
   version: 18.2.0
   resolution: "react-dom@npm:18.2.0"
   dependencies:
@@ -4069,7 +4069,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react@npm:^18":
+"react@npm:^18.2.0":
   version: 18.2.0
   resolution: "react@npm:18.2.0"
   dependencies:
@@ -4422,7 +4422,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tailwindcss@npm:^3, tailwindcss@npm:^3.2.7":
+"tailwindcss@npm:^3.2.7, tailwindcss@npm:^3.3.3":
   version: 3.3.3
   resolution: "tailwindcss@npm:3.3.3"
   dependencies:
@@ -4474,19 +4474,19 @@ __metadata:
   resolution: "tc@workspace:."
   dependencies:
     "@nextui-org/react": ^2.1.13
-    "@types/node": ^20
-    "@types/react": ^18
-    "@types/react-dom": ^18
-    autoprefixer: ^10
+    "@types/node": ^20.8.7
+    "@types/react": ^18.2.31
+    "@types/react-dom": ^18.2.14
+    autoprefixer: ^10.4.16
     framer-motion: ^10.16.4
     next: 13.5.6
-    postcss: ^8
+    postcss: ^8.4.31
     prettier: ^3.0.3
     prettier-plugin-tailwindcss: ^0.5.6
-    react: ^18
-    react-dom: ^18
-    tailwindcss: ^3
-    typescript: ^5
+    react: ^18.2.0
+    react-dom: ^18.2.0
+    tailwindcss: ^3.3.3
+    typescript: ^5.2.2
   languageName: unknown
   linkType: soft
 
@@ -4531,7 +4531,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@npm:^5":
+"typescript@npm:^5.2.2":
   version: 5.2.2
   resolution: "typescript@npm:5.2.2"
   bin:
@@ -4541,7 +4541,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@^5#~builtin<compat/typescript>":
+"typescript@patch:typescript@^5.2.2#~builtin<compat/typescript>":
   version: 5.2.2
   resolution: "typescript@patch:typescript@npm%3A5.2.2#~builtin<compat/typescript>::version=5.2.2&hash=f3b441"
   bin:
