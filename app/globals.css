@@ -5,3 +5,80 @@
 * {
 	/* outline: 1px solid red; */
 }
+/* about page */
+.about-page{
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+	padding: 0;
+	margin: 0;
+}
+.text-a{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 2rem;
+}
+.text-a span{
+	font-size: 6.5rem;
+	font-weight: 900;
+}
+.text-a>span:nth-child(1) {
+	font-weight:lighter;
+	color: #091F36;
+}
+.tc-col{
+	display: flex;
+	flex-direction: column;
+}
+.two-a{
+	display: flex;
+	flex-wrap: wrap;
+	/* justify-content: space-between; */
+	justify-content: center;
+	gap: 5rem;
+	padding: 2rem;
+}
+.right-a{
+	width: 30rem;
+	margin-right: 4rem;
+	margin-top: 1.5rem;
+	font-size: 1.4rem;
+}
+.left-a .img-tc{
+	position: relative;
+	bottom: 8rem;
+	width: 40rem;
+	transform: rotate(-60deg);
+}
+.about-a2{
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+	background: #091F36;
+}
+#text-a{
+	position: relative;
+	top: 5rem;
+	color: #fff;
+}
+#text-a>span{
+	color: #fff;
+}
+.chat-tc{
+	width: 32rem;
+	float: right;
+	right: 4rem;
+	position: relative;
+	bottom: 14rem;
+}
+.chat-tc2{
+	width: 12rem;
+	position: relative;
+	top: 16rem;
+}
+#btn{
+	position: relative;
+	top: 24rem;
+	float: right-;
+}
