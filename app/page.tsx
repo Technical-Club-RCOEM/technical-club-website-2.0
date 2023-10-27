@@ -4,7 +4,7 @@ export default function Home() {
 	return (
 		<>
 			<div className="flex w-full items-center justify-between">
-				<p className="ml-32 text-7xl">
+				<p className="ml-40 text-9xl">
 					It's
 					<br />
 					Technical!

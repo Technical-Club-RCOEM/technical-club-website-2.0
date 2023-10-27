@@ -5,7 +5,7 @@ export default function About() {
 	return (
 		<>
 			<div className="about-page">
-				<div className="text-a">
+				<div className="text-a" id='text-a1'>
 					<span>What is </span>
 					<div className="tc-col">
 						<span>Technical</span>
@@ -16,7 +16,7 @@ export default function About() {
 					<div className="left-a">
 						<Image src={Tc_logo} className='img-tc' alt="Logo"  />
 					</div>
-					<div className="right-a">
+					<div className="right-a" id='para'>
 						<p>
 							With a motive to provide a common platform for Interdisciplinary Technical Activities of the College, the
 							technical club was launched in 2015. The club aims to technically strengthen the students by integrating
