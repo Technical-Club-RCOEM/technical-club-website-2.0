@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Component from './components/Comp';
 
 export default function Home() {
 	return (
@@ -11,6 +12,7 @@ export default function Home() {
 				</p>
 				<Image src="/logo asset.svg" className="ml-4" alt="Logo" width={800} height={800} priority />
 			</div>
+			<Component/>
 		</>
 	);
 }
