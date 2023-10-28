@@ -19,3 +19,9 @@
 	letter-spacing: 100px;
 	color:white;
 }
+
+.events-title-image{
+	filter: contrast(60%) brightness(55%) saturate(170%);
+	
+
+}
