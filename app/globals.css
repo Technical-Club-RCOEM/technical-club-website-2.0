@@ -20,10 +20,10 @@
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	gap: 2rem;
+	gap: 20px;
 }
 .text-a span{
-	font-size: 6.5rem;
+	font-size:110px;
 	font-weight: 900;
 }
 .text-a>span:nth-child(1) {
@@ -39,18 +39,18 @@
 	flex-wrap: wrap;
 	width: 100%;
 	justify-content: center;
-	gap: 5rem;
-	padding: 2rem;
+	gap: 50px;
+	padding: 50px;
 }
 .right-a{
-	width: 30rem;
-	margin-right: 4rem;
-	font-size: 1.4rem;
+	width: 450px;
+	margin-right: 64px;
+	font-size: 24px;
 }
 .left-a .img-tc{
 	position: relative;
-	bottom: 14rem;
-	width: 40rem;
+	width: 700px;
+	bottom: 224px;
 	transform: rotate(-60deg);
 	animation: rotate 25s linear infinite;
 }
@@ -71,39 +71,60 @@
 }
 #text-a{
 	position: relative;
-	top: 5rem;
+	top: 80px;
 	color: #fff;
 }
 #text-a>span{
 	color: #fff;
 }
 .chat-tc{
-	width: 32rem;
+	width: 440px;
 	float: right;
-	right: 4rem;
+	right: 60px;
 	position: relative;
-	bottom: 14rem;
+	bottom: 224px;
 }
 .chat-tc2{
-	width: 12rem;
+	width: 250px;
 	position: relative;
-	top: 16rem;
+	top: 216px;
+	left: 30px;
 }
-@media screen and (max-width:80px){
-	#text-a1>span{
-		font-size: 2rem;
+@media (max-width:768px){
+	/* @media screen and (max-width:480px){ */
+	.two-a{
+		display: flex;
+		flex-direction: column;
+		gap:2px;
+		padding: 5px;
+		
 	}
-	#text-a1>.tc-col>span{
-		font-size: 2rem;
+	.text-a>span{
+		font-size: 42px;
 	}
-	#para{
-		width: 50rem;
-		font-size: 18px;
+	.tc-col>span{
+		font-size: 42px;
+	}
+	.right-a{
+		width: 100%;
+		font-size: 22px;
+		padding: 10px;
+		margin: 10px;
 		position: relative;
-		bottom: 9rem;
+		bottom: 132px;
 	}
 	.left-a .img-tc {
+		width: 70%;
 		position: relative;
-		top: 0rem;
+		top: -35px;
+	}
+	.chat-tc{
+		position: relative;
+		bottom: 34px;
+		left: 0px;
+		width: 180px;
+	}
+	.chat-tc2{
+		width: 150px;
 	}
 }
