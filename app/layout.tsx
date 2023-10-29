@@ -1,12 +1,11 @@
 import type { Metadata } from 'next';
-import { Alfa_Slab_One } from 'next/font/google';
+import { Alfa_Slab_One, Oswald } from 'next/font/google';
 import { Providers } from './providers';
-import Image from 'next/image';
-import { Navbar, NavbarBrand, NavbarContent, NavbarItem, Link } from '@nextui-org/react';
-
+import { Navbar } from './components/Nav';
 import './globals.css';
 
 const inter = Alfa_Slab_One({ weight: ['400'], subsets: ['latin'] });
+export const oswald = Oswald({ weight: ['400'], subsets: ['latin'] });
 
 export const metadata: Metadata = {
 	title: 'Technical Club',
@@ -18,29 +17,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 		<html lang="en" className="light">
 			<body className={inter.className}>
 				<Providers>
-					<Navbar>
-						<NavbarBrand>
-							<Image src="/logo.png" alt="Logo" width={50} height={50} priority />
-							<p className="text-inherit">Technical Club</p>
-						</NavbarBrand>
-						<NavbarContent className="hidden gap-4 sm:flex" justify="end">
-							<NavbarItem isActive>
-								<Link href="#" className="font-normal">
-									About
-								</Link>
-							</NavbarItem>
-							<NavbarItem>
-								<Link color="foreground" href="/events" aria-current="page">
-									Events
-								</Link>
-							</NavbarItem>
-							<NavbarItem>
-								<Link color="foreground" href="/achievements">
-									Achievements
-								</Link>
-							</NavbarItem>
-						</NavbarContent>
-					</Navbar>
+					<Navbar />
 					{children}
 				</Providers>
 			</body>

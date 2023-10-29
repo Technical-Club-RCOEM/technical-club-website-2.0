@@ -36,8 +36,6 @@ export default function About() {
 				</div>
 				<Image src={chat} className='chat-tc' alt="chat"  />
 				<Image src={chat} className='chat-tc2' alt="chat"  />
-				<button id='btn'>Join Now</button>
-
 			</div>
 		</>
 	);
