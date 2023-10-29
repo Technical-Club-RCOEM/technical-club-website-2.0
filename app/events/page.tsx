@@ -1,6 +1,7 @@
 import Box from './box';
 import img1 from '/img1.jpg'
 import Image from 'next/image';
+import './events.css'
 
 export default function Events() {
 	const arr: { name: string; img: string; desc:string; }[] = [
