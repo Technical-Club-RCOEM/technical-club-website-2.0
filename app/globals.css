@@ -22,6 +22,67 @@
 
 .events-title-image{
 	filter: contrast(60%) brightness(55%) saturate(170%);
-	
+}
 
+
+.events-box{
+	min-height: fit-content;
+	width:80vw
+}
+
+
+
+@keyframes slide {
+	0%    { left: -70%; }
+	100%  { left: -145%; }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+  @media screen and (max-width:800px) and (min-width:401px) {
+	.events-slider{
+	  position: absolute;
+	  left: -70%;
+	  top: 5%;
+	  height: 80%;
+	  width: 300%;
+	  animation: slide 20s linear infinite;
+	  z-index: -1;
+	  }
+
+	  .events-head{
+		position: absolute;
+		top:40%;
+		left:20% ;
+		z-index: 1;
+		font-size: 60px;
+		font-style: normal;
+		font-weight: 400;
+		letter-spacing: 10px;
+		color:white;
+	}
+}
+
+@media screen and (max-width:400px){
+	.events-head{
+		position: absolute;
+		top:40%;
+		left:10% ;
+		z-index: 1;
+		font-size: 50px;
+		font-style: normal;
+		font-weight: 400;
+		/* line-height: 106.5%; */
+		letter-spacing: 15px;
+		color:white;
+	}
 }
