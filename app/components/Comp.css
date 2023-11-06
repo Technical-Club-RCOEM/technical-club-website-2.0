@@ -4,6 +4,47 @@
 .m{
     position: relative;
 }
+@media screen and (max-width:768px){
+    #main{
+        width: 100%;
+        overflow: hidden;
+        position: absolute;
+        left: 0rem;
+    }
+    #stack{
+        /* width: 120px; */
+        width: 500px;
+        overflow: hidden;
+    }
+    #back{
+        /* display: none; */
+        width: 480px;
+        height: 320px;
+    }
+    #backinner{
+        /* display: none; */
+        bottom:20px ;
+        width:440px ;
+        height: 300px;
+    }
+    #front{
+        position: relative;
+        right: 2rem;
+        width:380px;
+        height: 240px;
+    }
+    #photo{
+        position: relative;
+        bottom: 18rem;
+        left: -1rem;
+        width: 140px;
+        height: 280px;
+    }
+    #photo>img{
+        width: 130px;
+        height: 240px;
+    }
+}
 .main{
     /* min-height: 800px; */
     /* height: 700px;*/

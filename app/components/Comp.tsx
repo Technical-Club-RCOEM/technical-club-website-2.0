@@ -1,5 +1,6 @@
 "use client"
 import './Comp.css'
+// import './caraousel.css'
 import { useState } from 'react';
 export default function Component() {
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -35,30 +36,36 @@ export default function Component() {
 
         <>
             <div className='m'>
-                <button className="carousel-left-button" onClick={handleLeftClick}>
+            <div className="carousel-container">
+      <button onClick={handleLeftClick}><img src='Arrow_left.svg'/></button>
+      {/* {React.createElement(carouselItems[activeIndex])} */}
+      <button onClick={handleRightClick}><img src='Arrow_right.svg'/></button>
+    </div>
+                {/* <div className='w-full relative text-white gap-38 flex justify-between text-center z-100'>
+                <button className="carousel-left-button relative bottom-16 left-60" onClick={handleLeftClick}>
                 left
                 </button>
                     <button className="carousel-right-button" onClick={handleRightClick}>
                     right
-                    </button>
-                <div className="main">
-                    <div className="stack">
-                        <div className="back">
+                    </button> */}
+                    {/* </div> */}
+                <div className="main" id='main'>
+                    <div className="stack" id='stack'>
+                        <div className="back" id='back'>
 
                         </div>
-                        <div className="backinner">
+                        <div className="backinner" id='backinner'>
 
                         </div>
-                        <div className="front">
-
+                        <div className="front" id='front'>
                             <p>
                             {children[currentIndex].content}
                             </p>
                         </div>
 
                     </div>
-                    <div className="photo">
-                        <img className='h-full contain' src={children[currentIndex].img} alt="" />
+                    <div className="photo" id='photo'>
+                        <img className='h-full cover items-center' src={children[currentIndex].img} alt="" />
                     </div>
                 </div>
 
