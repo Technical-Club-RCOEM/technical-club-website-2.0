@@ -6,7 +6,7 @@
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
-	/* outline: 1px solid red; */
+	outline: 1px solid red;
 }
 /* about page */
 .about-page {
@@ -164,4 +164,18 @@ button {
 
 button:hover {
     background-color: #5d738a;
+}
+
+
+.achieve-bg{
+	background-image: url(/photo1.jpeg);
+	background-position: center;
+	filter: contrast(75%) brightness(45%) saturate(175%);
+
+}
+
+.achieve-head{
+	filter:drop-shadow(0 0 10px #fff);
+	
+
 }
