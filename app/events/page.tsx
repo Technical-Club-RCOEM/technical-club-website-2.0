@@ -1,11 +1,10 @@
 'use client'
-
+import React , {useState} from 'react'
 import Box, { BoxProps } from './box';
 import img1 from '/img1.jpg';
 import Image from 'next/image';
 import './events.css';
 import { oswald } from '@/app/fonts';
-import React , {useState} from 'react'
 
 export default function Events() {
 
