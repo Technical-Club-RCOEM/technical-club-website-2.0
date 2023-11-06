@@ -8,7 +8,7 @@ export default function Footer () {
                         <h3>
                             Contact Us
                         </h3>
-                    </div>
+                </div>
 
                     <div className='colab'>
                         <p>
