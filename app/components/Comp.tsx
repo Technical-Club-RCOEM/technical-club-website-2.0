@@ -41,14 +41,6 @@ export default function Component() {
       {/* {React.createElement(carouselItems[activeIndex])} */}
       <button onClick={handleRightClick}><img src='Arrow_right.svg'/></button>
     </div>
-                {/* <div className='w-full relative text-white gap-38 flex justify-between text-center z-100'>
-                <button className="carousel-left-button relative bottom-16 left-60" onClick={handleLeftClick}>
-                left
-                </button>
-                    <button className="carousel-right-button" onClick={handleRightClick}>
-                    right
-                    </button> */}
-                    {/* </div> */}
                 <div className="main" id='main'>
                     <div className="stack" id='stack'>
                         <div className="back" id='back'>

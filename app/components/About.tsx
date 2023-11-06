@@ -39,8 +39,8 @@ export default function About() {
 				<Image src={chat} className='chat-tc' alt="chat"  />
 				<Image src={chat} className='chat-tc2' alt="chat"  />
 			</div>
-			<Footer/>
 			<Component/>
+			{/* <Footer/> */}
 		</>
 	);
 }

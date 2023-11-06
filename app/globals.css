@@ -90,11 +90,11 @@
 	top: 216px;
 	left: 30px;
 }
-
+/* 
 body {
 	background-image: url(/bg.svg);
 	background-size: 250%;
-}
+} */
 
 @media (max-width: 768px) {
 	.two-a {
@@ -147,7 +147,7 @@ body {
     padding: 20px;
     margin: 10px;
     text-align: center;
-    background-color: #f0f0f0;
+    background-color: #091F36;
 }
 
 button {
@@ -156,6 +156,10 @@ button {
     border: none;
     padding: 10px 20px;
     cursor: pointer;
+	position: relative;
+	bottom: 100px;
+	z-index: 1;
+	background: transparent;
 }
 
 button:hover {

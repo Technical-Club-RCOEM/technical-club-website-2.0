@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import About from './components/About';
+import Footer2 from './components/Footer2';
 export default function Home() {
 	return (
 		<>
@@ -12,6 +13,7 @@ export default function Home() {
 				<Image src="/logo asset.svg" className="md:ml-6 relative bottom-16 left-16" alt="Logo" width={800} height={800} priority />
 			</div>
 			<About/>
+			<Footer2/>
 		</>
 	);
 }
