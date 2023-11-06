@@ -1,0 +1,299 @@
+/* .footer {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.container {
+    background: aqua;
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.contact-us {
+    position: absolute
+} */
+
+.box {
+    height: 100%;
+    width: 100%;
+    /* position: relative; */
+}
+
+.box .rectangle {
+    background-color: #091f36;
+    height: 80%;
+    left: 0;
+    top: 173rem;
+    position: absolute;
+    width: 100%;
+}
+@media screen and (max-width:468px) {
+    #rect{
+        position: absolute;
+        top: 140rem;
+    }
+}
+.contact-us {
+    position: absolute;
+    height: 10%;
+    width: 40%;
+    top: 20%;
+    left: 10%;
+    margin: 0;
+}
+
+.contact-us h3 {
+    color: #ffffff;
+    font-family: "Work Sans-Regular", Helvetica;
+    font-size: 60px;
+    font-weight: 400;
+    letter-spacing: 3px;
+    line-height: normal;
+    white-space: nowrap;
+    margin: 0;
+}
+
+.colab {
+    height: 5%;
+    width: 30%;
+    position: absolute;
+    top: 35%;
+    left: 10%;
+    color: #ffffff;
+}
+
+.colab h3 { 
+    font-family: "Inter-ExtraLight", Helvetica;
+    font-size: 30px;
+    font-weight: 60;
+    left: 0;
+    letter-spacing: 0;
+    line-height: normal;
+    top: 0;
+    white-space: nowrap;
+}
+
+.email {
+    height: 5%;
+    width: 30%;
+    color: #ffffff;
+    position: absolute;
+    top: 40%;
+    left: 10%;
+}
+
+.email h3 {
+    font-family: "Work Sans-Regular", Helvetica;
+    font-size: 30px;
+    font-weight: 200;
+    left: 0;
+    letter-spacing: -2px;
+    line-height: normal;
+    top: 0;
+    white-space: nowrap;
+}
+
+.call {
+    height: 5%;
+    width: 30%;
+    position: absolute;
+    top: 37.5%;
+    left: 30%;
+    color: #ffffff;
+}
+
+.call h3 { 
+    font-family: "Inter-ExtraLight", Helvetica;
+    font-size: 20px;
+    font-weight: 60;
+    left: 0;
+    letter-spacing: 0;
+    line-height: normal;
+    top: 0;
+    white-space: nowrap;
+    margin: 0;
+}
+
+.num {
+    height: 5%;
+    width: 30%;
+    color: #ffffff;
+    position: absolute;
+    top: 43%;
+    left: 30%;
+}
+
+.num h3 {
+    font-family: "Work Sans-Regular", Helvetica;
+    font-size: 20px;
+    font-weight: 100;
+    left: 0;
+    letter-spacing: 1px;
+    line-height: normal;
+    top: 0;
+    white-space: nowrap;
+    margin: 0;
+}
+
+.circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40%;
+    width:  16.5%;
+    position: absolute;
+    top: 15%;
+    right: 10%;
+    background-color: #144273;
+    text-align: center;
+    border-radius: 300px;
+    color: #ffffff;
+}
+.address p{
+    font-weight: 100;
+}
+
+.social {
+    color: #ffffff;
+    top: 57.5%;
+    left: 10%;
+    position: absolute;
+}
+
+.social h3 {
+    font-family: "Work Sans-Regular", Helvetica;
+    font-size: 35px;
+    font-weight: 100;
+    left: 0;
+    letter-spacing: 1px;
+    line-height: normal;
+    top: 0;
+    white-space: nowrap;
+    margin: 0;
+}
+
+.socials {
+    position: absolute;
+    top: 63%;
+    left: 5%;
+}
+
+.socials ul {
+    list-style: none;
+}
+
+.socials ul li {
+    display: inline-block;
+    margin: 8px 40px;
+    font-family: "Work Sans-Regular", Helvetica;
+    font-size: 1.2em;
+}   
+
+.socials ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.socials ul li a:hover {
+    transition: 0.8s;
+    opacity: 80%;
+    border-radius: 20px;
+    color:blue;
+}
+
+.location {
+    color: #ffffff;
+    position: absolute;
+    right: 20%;
+    top: 60%;
+}
+
+.location h3 {
+
+}
+
+.address {
+    position: absolute;
+    right: 6%;
+    top: 67%;
+    color: #ffffff;
+    height: 20%;
+    width: 20%;
+}
+
+.address h3 {
+
+}
+
+
+@media only screen and (max-width: 768px) {
+    .socials ul li {
+        display: block;
+        margin: 8px 40px;
+        font-family: "Work Sans-Regular", Helvetica;
+        font-size: 1.2em;
+    }   
+
+    .socials {
+        left: 0;
+    }
+
+    .colab {
+        height: 5%;
+        width: 30%;
+        position: absolute;
+        top: 25%;
+        left: 10%;
+        color: #ffffff;
+    }
+
+    .email {
+        height: 5%;
+        width: 30%;
+        color: #ffffff;
+        position: absolute;
+        top: 32%;
+        left: 10%;
+    }
+
+    .call {
+        height: 5%;
+        width: 30%;
+        position: absolute;
+        top: 37.5%;
+        left: 10%;
+        color: #ffffff;
+    }
+
+    .num {
+        height: 5%;
+        width: 30%;
+        color: #ffffff;
+        position: absolute;
+        top: 43%;
+        left: 10%;
+    }
+
+    .contact-us {
+        top: 10%
+    }
+
+    .address {
+        position: absolute;
+        right: 10%;
+        top: 67%;
+        color: #ffffff;
+        height: 20%;
+        width: 40%;
+    }
+    .circle{
+        position: absolute;
+        top: 160px;
+        width: 100px;
+        height: 100px;
+        
+    }
+    
+}
