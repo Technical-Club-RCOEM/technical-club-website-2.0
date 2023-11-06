@@ -1,11 +1,17 @@
 import Image from 'next/image';
+import { useState } from 'react';
 
 export default function Box(props: BoxProps) {
+
+	// const [current , setCurrent] = useState(0);
+
+
+
 	return (
 		<>
-			<div className="flex h-full w-full justify-center">
+			<div className="flex h-full w-full justify-center lg:ml-44 ml-10 relative">
 				<div className="events-box rounded-b-[100px] bg-tc-blue">
-					<div className="flex flex-col gap-6 pb-10 pl-10 pr-10 pt-12 text-white lg:flex-row">
+					<div className="flex flex-col gap-6 pb-10 px-16 pt-12 text-white lg:flex-row">
 						<Image
 							src={props.img}
 							alt="Logo"
@@ -18,10 +24,16 @@ export default function Box(props: BoxProps) {
 						<p className="text-center">{props.description}</p>
 					</div>
 				</div>
+
+			{/* Buttons */}
+
+			
 			</div>
 		</>
 	);
 }
+
+
 
 export interface BoxProps {
 	name: string;

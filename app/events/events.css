@@ -1,7 +1,7 @@
 .events-head {
 	position: absolute;
 	top: 40%;
-	left: 19%;
+	left: 25%;
 	z-index: 10;
 	font-size: 100px;
 	font-style: normal;
@@ -9,6 +9,7 @@
 	line-height: 106.5%; /* 266.25px */
 	letter-spacing: 100px;
 	color: white;
+	filter:drop-shadow(0 0 10px #fff)
 }
 
 .events-title-image {
@@ -22,10 +23,10 @@
 
 @keyframes slide {
 	0% {
-		transform: translateX(0%);
+		transform: translateX(-30%);
 	}
 	100% {
-		transform: translateX(100%);
+		transform: translateX(10%);
 	}
 }
 
@@ -36,19 +37,19 @@
 		top: 5%;
 		height: 80%;
 		width: 300%;
-		animation: slide 20s linear infinite;
-		z-index: -1;
+		animation: slide 2s ease alternate infinite;
+		z-index: 0;
 	}
 
 	.events-head {
 		position: absolute;
 		top: 40%;
-		left: 12%;
+		left: 15%;
 		z-index: 1;
 		font-size: 60px;
 		font-style: normal;
 		font-weight: 400;
-		letter-spacing: 10px;
+		letter-spacing: 25px;
 		color: white;
 	}
 }
@@ -57,13 +58,13 @@
 	.events-head {
 		position: absolute;
 		top: 40%;
-		left: 10%;
+		left: 15%;
 		z-index: 1;
 		font-size: 50px;
 		font-style: normal;
 		font-weight: 400;
 		/* line-height: 106.5%; */
-		letter-spacing: 15px;
+		letter-spacing: 25px;
 		color: white;
 	}
 	.events-slider {
@@ -74,6 +75,6 @@
 		overflow: hidden;
 		width: 300%;
 		animation: slide 2s ease alternate infinite;
-		z-index: -1;
+		z-index: 0;
 	}
 }
