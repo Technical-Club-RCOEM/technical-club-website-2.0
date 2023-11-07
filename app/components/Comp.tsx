@@ -36,9 +36,8 @@ export default function Component() {
 
         <>
             <div className='m'>
-            <div className="carousel-container">
+            <div className="carousel-container" id='btns'>
       <button onClick={handleLeftClick}><img src='Arrow_left.svg'/></button>
-      {/* {React.createElement(carouselItems[activeIndex])} */}
       <button onClick={handleRightClick}><img src='Arrow_right.svg'/></button>
     </div>
                 <div className="main" id='main'>
