@@ -1,6 +1,6 @@
 'use client';
 import React, { useState } from 'react';
-import DomainsInfo from './domains/DomainsInfo';
+import DomainsInfo from './DomainInfo';
 import Clubs from './Clubs';
 export default function Domains() {
 	const [menu, setMenu] = useState(DomainsInfo);

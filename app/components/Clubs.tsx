@@ -1,6 +1,6 @@
 'use client';
 import React, { useState } from 'react';
-import DomainsInfo from './domains/DomainsInfo';
+import DomainsInfo from './DomainInfo';
 import { filterProps } from 'framer-motion';
 export default function Clubs() {
 	const [menu, setMenu] = useState(DomainsInfo);
