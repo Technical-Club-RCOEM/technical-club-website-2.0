@@ -1,10 +1,11 @@
 import type { Metadata } from 'next';
-import { Alfa_Slab_One, Oswald } from 'next/font/google';
+import { Oswald, Figtree } from 'next/font/google';
 import { Providers } from './providers';
 import { Navbar } from './components/Nav';
 import './globals.css';
+import Footer2 from './components/Footer2';
 
-const inter = Alfa_Slab_One({ weight: ['400'], subsets: ['latin'] });
+const inter = Figtree({ weight: ['400'], subsets: ['latin'] });
 export const oswald = Oswald({ weight: ['400'], subsets: ['latin'] });
 
 export const metadata: Metadata = {
@@ -19,6 +20,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 				<Providers>
 					<Navbar />
 					{children}
+					<Footer2 />
 				</Providers>
 			</body>
 		</html>

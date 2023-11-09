@@ -1,21 +1,20 @@
 import Image from 'next/image';
 import About from './components/About';
-import Footer2 from './components/Footer2';
 import Domains from './components/Domains';
 import Clubs from './components/Clubs';
+import { roboto_slab } from './fonts';
 export default function Home() {
 	return (
 		<>
-			<div className="md:flex w-full items-center justify-center overflow-hidden">
-				<p className="md:ml-40 md:text-9xl text-5xl ml-8 mt-8 ">
+			<div className="flex w-full items-center justify-end overflow-hidden max-md:flex-col">
+				<p className={"text-8xl max-md:text-7xl p-4 " + roboto_slab.className}>
 					It's
 					<br />
 					Technical!
 				</p>
-				<Image src="/logo asset.svg" className="md:ml-6 relative bottom-16 left-16" alt="Logo" width={800} height={800} priority />
+				<Image src="/TC_logo.png" className="relative max-xl:h-[90vh] max-xl:object-contain max-md:scale-80" alt="Logo" width={800} height={600} priority />
 			</div>
 			<About/>
-			<Footer2/>
 		</>
 	);
 }

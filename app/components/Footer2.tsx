@@ -19,7 +19,7 @@ export default function Footer2() {
 					<span>Socials</span>
 					<div className="flex flex-col gap sm:flex sm:flex-row sm:gap-6 gap-2">
 						<span>INSTAGRAM</span>
-						<span>FACEBOO</span>
+						<span>FACEBOOK</span>
 						<span>LINKEDIN</span>
 						<span>TWITTER</span>
 					</div>

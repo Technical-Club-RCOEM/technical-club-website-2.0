@@ -14,6 +14,9 @@ export default {
 				'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
 				'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
 			},
+			animation: {
+				'slow-spin': 'spinner-spin 30s linear infinite',
+			},
 			colors: {
 				'tc-blue': '#04284E',
 			},
