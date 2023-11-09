@@ -18,24 +18,44 @@ const Achievements = () => {
 	}
   const arr: BoxProps[] = [
 		{
-			name: 'Robodrive',
+			name: 'Hackanova 2.0 TCET Open Innovation',
 			img: '/img1.jpg',
-			description: 'lorem',
+			description: 'Winner ',
 		},
 		{
-			name: 'Robot',
+			name: 'CodeFury ',
 			img: '/img1.jpeg',
-			description: 'yoyo',
+			description: 'Winner',
 		},
 		{
-			name: 'Robot',
+			name: 'Autocoders GCOEM ',
 			img: '/photo1.jpeg',
-			description: 'yoyo',
+			description: 'Winner ',
 		},
 		{
-			name: 'Robot',
+			name: ' IITB Techfest Zonals code',
 			img: '/photo1.jpeg',
-			description: 'yoyo',
+			description: '3rd ',
+		},
+		{
+			name: ' Designex 2.0 VIT-AP',
+			img: '/photo1.jpeg',
+			description: 'Winner ',
+		},
+		{
+			name: ' IISF-SIF (MANIT Bhopal) ',
+			img: '/photo1.jpeg',
+			description: 'AIR 13th  ',
+		},
+		{
+			name: ' IDRL S7Ep6 @ Amalthea 2022, IIT Gandhinagar ',
+			img: '/photo1.jpeg',
+			description: ' 7th position  ',
+		},
+		{
+			name: ' IDRL S7Ep8 @ Technex-23, SPVCET, Nagpur  ',
+			img: '/photo1.jpeg',
+			description: '7th Position',
 		},
 		
 	];
@@ -44,22 +64,22 @@ const Achievements = () => {
       <div className='w-screen h-screen flex flex-col items-center justify-center -mt-7 '>
         <div className='bg-tc-blue w-9/12 h-3/4 rounded-[100px]  achieve-bg relative'>
         </div>
-          <p className={'absolute lg:top-1/3 lg:left-[25vw] text-3xl lg:text-[100px]  text-white achieve-head' + oswald.className}>Achievements</p>
+          <p className={'absolute lg:top-1/3 lg:left-[25vw] text-3xl lg:text-[100px]  text-white achieve-head'}>Achievements</p>
       </div> 
 
-      <div className="relative flex lg:gap-32 overflow-x-hidden" >
+      <div className="relative flex lg:gap-40 overflow-x-hidden" >
 				
-				<div className='flex transition-transform ease-out duration-500'  style={{ transform: `translateX(-${curr * 25}%)` }}>
+				<div className='flex transition-transform ease-out duration-500 pb-10'  style={{ transform: `translateX(-${curr * (100 / arr.length)}%)` }}>
 					{arr.map((a) => {
 						return <Box {...a} />;
 					})}
 				</div>
 			
-			<button className='absolute left-2 p-1 lg:top-60 rounded-md bg-slate-600 top-48 text-white' onClick={prev}>
+				<button className='absolute left-2 p-1 lg:top-60 rounded-md bg-slate-600 top-48 h-10 text-white' onClick={prev}>
 				Prev
 			</button>
 
-			<button className='absolute right-8 lg:-right-20 lg:top-60 p-1 rounded-md  top-48  text-white bg-slate-600' onClick={next}>
+			<button className='absolute right-4 lg:top-60 p-1 rounded-md  top-48 h-10 text-white bg-slate-600' onClick={next}>
 				Next
 			</button>
 			
