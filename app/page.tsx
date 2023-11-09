@@ -1,6 +1,8 @@
 import Image from 'next/image';
 import About from './components/About';
 import Footer2 from './components/Footer2';
+import Domains from './components/Domains';
+import Clubs from './components/Clubs';
 export default function Home() {
 	return (
 		<>

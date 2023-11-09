@@ -1,8 +1,9 @@
+"use client"
 import Tc_logo from './img/TC_logo_about.png';
 import chat from './img/chat.png';
 import Image from 'next/image';
-import Footer from './Footer'
 import Component from './Comp';
+import Domains from './Domains';
 export default function About() {
 	return (
 		<>
@@ -40,6 +41,7 @@ export default function About() {
 				<Image src={chat} className='chat-tc2' alt="chat"  />
 			</div>
 			<Component/>
+			<Domains/>
 			{/* <Footer/> */}
 		</>
 	);
