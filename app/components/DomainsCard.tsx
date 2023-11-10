@@ -15,5 +15,5 @@ const DomainsCard = ({ selectedProduct }) => {
 		</div>
 	);
 };
-
+  
 export default DomainsCard;
