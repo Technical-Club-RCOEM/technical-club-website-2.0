@@ -17,7 +17,7 @@ export default function Footer2() {
 				</div>
 				<div className="flex flex-col pt-8">
 					<span>Socials</span>
-					<div className="flex flex-col gap sm:flex sm:flex-row sm:gap-6 gap-2">
+					<div className="flex sm:flex sm:flex-row sm:gap-6 gap-2">
 						<span>INSTAGRAM</span>
 						<span>FACEBOOK</span>
 						<span>LINKEDIN</span>
@@ -26,7 +26,7 @@ export default function Footer2() {
 					{/* </div> */}
 				</div>
 			</div>
-			<div className="flex  sm:flex-col justify-center gap-2 sm:gap-10">
+			<div className="flex mt-5  sm:flex-col justify-center gap-2 sm:gap-10">
 				<div className="flex h-32 w-32 sm:h-48 sm:w-48 items-center justify-center rounded-full border bg-[#091F36]">
 					<p className="">Get In Touch</p>
 				</div>

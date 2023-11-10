@@ -1,5 +1,6 @@
 'use client';
 import './Comp.css';
+import Image from 'next/image';
 import { Button } from '@nextui-org/react';
 // import './caraousel.css'
 import { useState } from 'react';
@@ -39,7 +40,7 @@ export default function Component() {
 			<div className="relative py-12 bg-[#091f36]">
 				<div className="flex items-center justify-center gap-[60vw]" id="btns">
 					<Button isIconOnly variant="solid" className="z-10 bg-[#154a82] p-3 -translate-y-16" onClick={handleLeftClick}>
-						<img src="Arrow_left.svg" />
+						<Image src="Arrow_left.svg" alt="arrow" width={200} height={200} priority/>
 					</Button>
 					<div className="main relative py-12 -translate-x-10" id="main">
 						<div className="stack" id="stack">
@@ -54,7 +55,8 @@ export default function Component() {
 						</div>
 					</div>
 					<Button isIconOnly variant="solid" className="z-10 bg-[#154a82] p-3 -translate-y-16" onClick={handleRightClick}>
-						<img src="Arrow_right.svg" />
+						{/* <img src="Arrow_right.svg" /> */}
+						<Image src="Arrow_right.svg" alt='arrow' width={200} height={200} priority/>
 					</Button>
 				</div>
 			</div>
