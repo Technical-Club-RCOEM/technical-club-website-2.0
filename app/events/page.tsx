@@ -70,7 +70,7 @@ export default function Events() {
 	return (
 		<div className=" h-full w-full py-20 overflow-x-hidden">
 			<div className="slider overflow-x-hidden">
-				<div className="h-screen w-full ">
+				<div className="h-screen w-screen ">
 					<div className="events-slider mt-12  flex justify-center">
 						<Image
 							src={img1}
