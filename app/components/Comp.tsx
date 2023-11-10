@@ -51,7 +51,7 @@ export default function Component() {
 						<Image src={left} alt="arrow" width={200} height={200} priority />
 					</Button>
 					<div className="main relative -translate-x-10 py-12" id="main">
-						<div className="stack" id="stack">
+						<div className="stack " id="stack">
 							<div className="back" id="back"></div>
 							<div className="backinner" id="backinner"></div>
 							<div className="front" id="front">
