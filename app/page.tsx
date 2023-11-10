@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import About from './components/About';
 import { roboto_slab } from './fonts';
+import TCLogo from './components/img/TC_logo.png'
 export default function Home() {
 	return (
 		<>
@@ -11,7 +12,7 @@ export default function Home() {
 					Technical!
 				</p>
 				<Image
-					src="TC_logo.png"
+					src={TCLogo}
 					className="relative max-xl:h-[90vh] max-xl:object-contain max-md:scale-80"
 					alt="Logo"
 					width={800}
