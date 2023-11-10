@@ -6,11 +6,17 @@ import React, { useState } from 'react';
 import '../events/events.css';
 import img1 from '../components/img/img1.jpg';
 import photo1 from '../components/img/photo1.jpeg';
+import techSaga from '../components/img/ach/techsaga.jpg';
 
 const Achievements = () => {
 	const [curr, setCurr] = useState(0);
 
 	const arr: BoxProps[] = [
+		{
+			name: ' Tech Saga',
+			description: 'Winner ',
+			img: techSaga,
+		},
 		{
 			name: 'Hackanova 2.0 TCET Open Innovation',
 			img: img1,
@@ -70,7 +76,11 @@ const Achievements = () => {
 		<div className="h-full w-full">
 			<div className="-mt-7 flex h-screen w-screen flex-col items-center justify-center ">
 				<div className="achieve-bg relative h-3/4 w-9/12  rounded-[100px] bg-tc-blue"></div>
-				<p className={'achieve-head absolute text-3xl text-white lg:left-[25vw]  lg:top-1/3 lg:text-[100px]'}>
+				<p
+					className={
+						'achieve-head absolute text-3xl uppercase tracking-wider text-white lg:left-[25vw]  lg:top-2/4 lg:text-[100px]'
+					}
+				>
 					Achievements
 				</p>
 			</div>
