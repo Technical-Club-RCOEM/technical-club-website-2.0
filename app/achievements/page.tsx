@@ -80,8 +80,8 @@ const Achievements = () => {
 					className="flex pb-10 transition-transform duration-500 ease-out"
 					style={{ transform: `translateX(-${curr * (100 / arr.length)}%)` }}
 				>
-					{arr.map((a) => {
-						return <Box {...a} />;
+					{arr.map((a, i) => {
+						return <Box key={i} {...a} />;
 					})}
 				</div>
 
