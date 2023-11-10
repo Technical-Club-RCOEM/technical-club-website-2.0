@@ -1,4 +1,10 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
+const nextConfig = {
+	output: 'export',
+	basePath: '/technical-club-website-2.0',
+	images: {
+		unoptimized: true,
+	},
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;

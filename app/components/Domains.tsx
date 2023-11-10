@@ -1,13 +1,13 @@
-"use client"
+'use client';
 import React, { useState } from 'react';
 import { products } from './DomainsData';
 import { roboto_slab } from '../fonts';
 import DomainsNavbar from './DomainsNavbar';
-import DomainsCard from './DomainsCard';
+import DomainsCard, { Product } from './DomainsCard';
 function Domains() {
-	const [selectedProduct, setSelectedProduct] = useState(null);
+	const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
 
-	const handleItemClick = (item) => {
+	const handleItemClick = (item: Product) => {
 		setSelectedProduct(item);
 	};
 
@@ -16,7 +16,7 @@ function Domains() {
 			<p className={'py-2 text-center text-8xl text-white max-md:text-5xl ' + roboto_slab.className}>Our Domains</p>
 			<div className="flex flex-col items-center justify-center gap-0 text-white">
 				<DomainsNavbar products={products} onItemClick={handleItemClick} />
-				<DomainsCard selectedProduct={selectedProduct} />
+				{selectedProduct && <DomainsCard selectedProduct={selectedProduct} />}
 			</div>
 		</div>
 	);

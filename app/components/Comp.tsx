@@ -4,6 +4,9 @@ import Image from 'next/image';
 import { Button } from '@nextui-org/react';
 // import './caraousel.css'
 import { useState } from 'react';
+import left from './img/Arrow_left.svg';
+import right from './img/Arrow_right.svg';
+
 export default function Component() {
 	const [currentIndex, setCurrentIndex] = useState(0);
 	const children = [
@@ -37,12 +40,17 @@ export default function Component() {
 	};
 	return (
 		<>
-			<div className="relative py-12 bg-[#091f36]">
+			<div className="relative bg-[#091f36] py-12">
 				<div className="flex items-center justify-center gap-[60vw]" id="btns">
-					<Button isIconOnly variant="solid" className="z-10 bg-[#154a82] p-3 -translate-y-16" onClick={handleLeftClick}>
-						<Image src="Arrow_left.svg" alt="arrow" width={200} height={200} priority/>
+					<Button
+						isIconOnly
+						variant="solid"
+						className="z-10 -translate-y-16 bg-[#154a82] p-3"
+						onClick={handleLeftClick}
+					>
+						<Image src={left} alt="arrow" width={200} height={200} priority />
 					</Button>
-					<div className="main relative py-12 -translate-x-10" id="main">
+					<div className="main relative -translate-x-10 py-12" id="main">
 						<div className="stack" id="stack">
 							<div className="back" id="back"></div>
 							<div className="backinner" id="backinner"></div>
@@ -51,12 +59,17 @@ export default function Component() {
 							</div>
 						</div>
 						<div className="photo" id="photo">
-							<img className="object-cover w-full items-center" src={children[currentIndex].img} alt="img" />
+							<img className="w-full items-center object-cover" src={children[currentIndex].img} alt="img" />
 						</div>
 					</div>
-					<Button isIconOnly variant="solid" className="z-10 bg-[#154a82] p-3 -translate-y-16" onClick={handleRightClick}>
+					<Button
+						isIconOnly
+						variant="solid"
+						className="z-10 -translate-y-16 bg-[#154a82] p-3"
+						onClick={handleRightClick}
+					>
 						{/* <img src="Arrow_right.svg" /> */}
-						<Image src="Arrow_right.svg" alt='arrow' width={200} height={200} priority/>
+						<Image src={right} alt="arrow" width={200} height={200} priority />
 					</Button>
 				</div>
 			</div>
