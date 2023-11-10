@@ -11,7 +11,7 @@ export default function Home() {
 					Technical!
 				</p>
 				<Image
-					src="/TC_logo.png"
+					src="TC_logo.png"
 					className="relative max-xl:h-[90vh] max-xl:object-contain max-md:scale-80"
 					alt="Logo"
 					width={800}

@@ -2,7 +2,7 @@
 
 import { Navbar as NV, NavbarBrand, NavbarContent, NavbarItem, Link } from '@nextui-org/react';
 import Image from 'next/image';
-import { redirect, usePathname } from 'next/navigation';
+import { usePathname } from 'next/navigation';
 
 export function Navbar() {
 	const path = usePathname();
@@ -10,7 +10,7 @@ export function Navbar() {
 	return (
 		<NV>
 			<NavbarBrand>
-				<Image src="/logo.png" alt="Logo" width={50} height={50} priority />
+				<Image src="logo.png" alt="Logo" width={50} height={50} priority />
 				<p className="text-inherit">Technical Club</p>
 			</NavbarBrand>
 			<NavbarContent className="hidden gap-16 sm:flex" justify="end">
