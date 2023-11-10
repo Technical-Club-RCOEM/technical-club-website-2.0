@@ -1,0 +1,35 @@
+* {
+	/* outline: 3px solid red; */
+}
+#main {
+	display: flex;
+	justify-content: right;
+	align-items: center;
+	background-color: #091f36;
+	/* background-image: url('/shape.svg'); */
+	/* background-size:cover; */
+	/* background-repeat: no-repeat; */
+	position: relative;
+	height: 600px;
+	width: 800px;
+}
+.shape {
+	width: 800px;
+	height: 600px;
+	position: absolute;
+}
+.photo1 {
+	background-color: #091f36;
+	outline: 7px solid #ffff;
+}
+.name {
+	/* position: absolute; */
+	text-align: center;
+}
+.content {
+	position: absolute;
+	right: 180px;
+	top: 250px;
+	height: 50px;
+	width: 200px;
+}

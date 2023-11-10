@@ -2,7 +2,7 @@
 import Tc_logo from './img/TC_logo_about.png';
 import chat from './img/chat.png';
 import Image from 'next/image';
-import Component from './Comp';
+import Component from './Comp3';
 import Domains from './Domains';
 import { roboto_slab, roboto } from '../fonts';
 export default function About() {
@@ -36,16 +36,16 @@ export default function About() {
 					</div>
 				</div>
 			</div>
-			<div className="h-[100vh] bg-[#091f36] py-16">
+			<div className="h-[100vh] bg-[#091f36] py-16 flex flex-col justify-start items-center">
 				<div className={'text-center text-8xl text-white max-md:text-5xl ' + roboto_slab.className}>
 					<p className="font-light">
 						Why to <span className="font-bold">Technical Club</span>?
 					</p>
 				</div>
-				<Image src={chat} className="chat-tc" alt="chat" />
-				<Image src={chat} className="chat-tc2" alt="chat" />
+				<Image src={chat} className="absolute h-44 w-auto" alt="chat" />
+				<Image src={chat} className="absolute h-44 w-auto" alt="chat" />
+				<Component />
 			</div>
-			<Component />
 			<Domains />
 		</>
 	);
