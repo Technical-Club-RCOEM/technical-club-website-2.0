@@ -5,7 +5,7 @@ export default function Box(props: BoxProps) {
 		<>
 			<div className="relative ml-10 flex h-fit min-h-[600px] w-full justify-center lg:ml-40">
 				<div className="events-box rounded-b-[100px] bg-tc-blue">
-					<div className="flex h-full flex-col 	 gap-6 px-16 pb-10 pt-12  text-white lg:flex-row">
+					<div className="flex h-full flex-col  gap-6 px-16 pb-10 pt-12  text-white lg:flex-row">
 						<Image
 							src={props.img}
 							alt="Logo"
