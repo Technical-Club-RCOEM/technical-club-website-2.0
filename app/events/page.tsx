@@ -68,10 +68,10 @@ export default function Events() {
 		});
 	};
 	return (
-		<div className=" h-full w-full py-20 overflow-x-hidden">
+		<div className=" h-full w-full py-10 overflow-x-hidden">
 			<div className="slider overflow-x-hidden">
-				<div className="h-screen w-screen flex justify-center">
-					<div className="events-slider mt-12  ">
+				<div className="h-full mb-32 w-screen flex justify-center">
+					<div className="events-slider mt-12  flex justify-center">
 						<Image
 							src={img1}
 							className="events-title-image ml-2 border-4 border-black lg:rounded-[150px] "
