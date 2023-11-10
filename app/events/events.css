@@ -23,22 +23,26 @@
 
 @keyframes slide {
 	0% {
-		transform: translateX(-30%);
+		background-image: url(../components/img/img1.jpg);
 	}
-	100% {
-		transform: translateX(10%);
+	50% {
+		background-image: url(../components/img/photo1.jpeg);
+	}
+	100%{
+		background-image: url(../components/img/blender.jpg);
 	}
 }
 
 @media screen and (max-width: 800px) and (min-width: 401px) {
 	.events-slider {
-		position: absolute;
-		left: -70%;
-		top: 5%;
-		height: 80%;
-		width: 300%;
-		animation: slide 2s ease alternate infinite;
-		z-index: 0;
+		width:95vw;
+		height:60vh;
+		background-image: url(../components/img/img1.jpg);
+		background-position: center;
+		background-size: cover;		
+		filter: contrast(60%) brightness(55%) saturate(170%);
+		animation: slide 10s ease alternate infinite;
+		border-radius: 40px;
 	}
 
 	.events-head {
@@ -54,27 +58,31 @@
 	}
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 800px) {
 	.events-head {
 		position: absolute;
 		top: 40%;
-		left: 5%;
+		left: 18%;
 		z-index: 1;
 		font-size: 50px;
 		font-style: normal;
 		font-weight: 400;
 		/* line-height: 106.5%; */
-		letter-spacing: 20px;
+		letter-spacing: 10px;
 		color: white;
 	}
 	.events-slider {
-		position: absolute;
-		left: -70%;
-		top: 5%;
-		height: 80%;
-		overflow: hidden;
-		width: 300%;
-		animation: slide 2s ease alternate infinite;
-		z-index: 0;
+		width:95vw;
+		height:60vh;
+		background-image: url(../components/img/img1.jpg);
+		background-position: center;
+		background-size: cover;		
+		filter: contrast(60%) brightness(55%) saturate(170%);
+		animation: slide 10s ease alternate infinite;
+		border-radius: 40px;
+	}
+
+	.events-title-image{
+		display: none;
 	}
 }
