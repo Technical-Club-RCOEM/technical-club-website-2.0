@@ -9,7 +9,7 @@ export default function Box(props: BoxProps) {
 						<Image
 							src={props.img}
 							alt="Logo"
-							className="min-h-screen-[100px] object-cover rounded-bl-[80px] rounded-tr-[80px] border-8 border-white"
+							className="min-h-screen-[100px] object-contain rounded-bl-[80px] rounded-tr-[80px] border-8 border-white"
 							width={400}
 							height={480}
 							priority

@@ -167,10 +167,10 @@ button:hover {
 
 
 .achieve-bg{
-	background-image: url(./components/img/photo1.jpeg);
+	background-image: url(./components/img/ach/all_seniors.jpg);
 	background-position: center;
-	filter: contrast(75%) brightness(45%) saturate(175%);
-
+	background-size: cover;
+	filter: contrast(85%) brightness(45%) saturate(200%);
 }
 
 .achieve-head{
