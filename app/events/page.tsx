@@ -75,27 +75,27 @@ export default function Events() {
 					<div className="events-slider mt-12  flex justify-center">
 						<Image
 							src={img1}
-							className="events-title-image ml-2 border-4 border-black lg:rounded-[150px] "
+							className="events-title-image ml-2 border-4 border-black lg:rounded-[75px] "
 							alt="Logo"
 							width={350}
-							height={500}
+							height={650}
 							priority
 						/>
 
 						<Image
 							src={img2}
-							className="events-title-image ml-2 border-4 border-black lg:rounded-br-[100px] lg:rounded-tl-[100px] lg:rounded-tr-[100px]"
+							className="events-title-image ml-2 border-4 border-black lg:rounded-br-[50px] lg:rounded-tl-[50px] lg:rounded-tr-[50px]"
 							alt="Logo"
-							width={350}
-							height={500}
+							width={300}
+							height={600}
 							priority
 						/>
 						<Image
 							src={detech}
-							className="events-title-image ml-2 border-4 border-black lg:rounded-br-[100px] lg:rounded-tl-[100px] lg:rounded-tr-[100px]"
+							className="events-title-image ml-2 border-4 border-black lg:rounded-br-[50px] lg:rounded-tl-[50px] lg:rounded-tr-[50px]"
 							alt="Logo"
-							width={350}
-							height={500}
+							width={300}
+							height={700}
 							priority
 						/>
 					</div>

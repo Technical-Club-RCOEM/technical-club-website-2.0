@@ -1,13 +1,13 @@
 .events-head {
 	position: absolute;
-	top: 45%;
+	top: 35%;
 	left: 25%;
 	z-index: 10;
 	font-size: 100px;
 	font-style: normal;
 	font-weight: 400;
 	line-height: 106.5%; /* 266.25px */
-	letter-spacing: 100px;
+	letter-spacing: 90px;
 	color: white;
 	filter:drop-shadow(0 0 10px #fff)
 }
@@ -23,13 +23,16 @@
 
 @keyframes slide {
 	0% {
-		background-image: url(../components/img/img1.jpg);
+		background-image: url(../components/img/events/detech.png);
 	}
 	50% {
-		background-image: url(../components/img/photo1.jpeg);
+		background-image: url(../components/img/events_img.jpg);
+	}
+	75%{
+		background-image: url(../components/img/events_img2.jpg);
 	}
 	100%{
-		background-image: url(../components/img/blender.jpg);
+		background-image: url(../components/img/events/lineFollower.png);
 	}
 }
 
@@ -41,7 +44,7 @@
 		background-position: center;
 		background-size: cover;		
 		filter: contrast(60%) brightness(55%) saturate(170%);
-		animation: slide 10s ease alternate infinite;
+		animation: slide 10s ease-in-out alternate infinite;
 		border-radius: 40px;
 	}
 
@@ -78,7 +81,7 @@
 		background-position: center;
 		background-size: cover;		
 		filter: contrast(60%) brightness(55%) saturate(170%);
-		animation: slide 10s ease alternate infinite;
+		animation: slide 10s ease-in-out alternate infinite;
 		border-radius: 40px;
 	}
 
