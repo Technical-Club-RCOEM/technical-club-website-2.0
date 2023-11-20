@@ -1,1 +1,1 @@
-export const BASE = '/technical-club-website-2.0'
+export const BASE = '/'
