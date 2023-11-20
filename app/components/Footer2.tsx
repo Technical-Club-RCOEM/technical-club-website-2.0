@@ -1,36 +1,41 @@
 import React from 'react';
+import Link from 'next/link';
 
 export default function Footer2() {
 	return (
-		<div className=" flex flex-col sm:flex sm:flex-row h-max w-full justify-center overflow-hidden  items-center gap-2 sm:gap-72 bg-[#000] p-16 text-start text-white ph:none">
+		<div className=" ph:none flex h-max w-full flex-col items-center justify-center gap-2  overflow-hidden bg-[#000] p-16 text-start text-white sm:flex sm:flex-row sm:gap-72">
 			<div className="flex flex-col ">
 				<span className="text-3xl sm:text-7xl">Contact us</span>
-				<div className="flex gap-2  sm:gap-16 pt-4">
+				<div className="flex gap-2  pt-4 sm:gap-16">
 					<div className="flex flex-col">
 						<span>Want to colaberate</span>
 						<span>technicalclub@rknec.edu</span>
 					</div>
 					<div className="flex flex-col">
 						<span>Call us</span>
-						<span className='w-32'>0712 258 001</span>
+						<span className="w-32">0712 258 001</span>
 					</div>
 				</div>
 				<div className="flex flex-col pt-8">
 					<span>Socials</span>
-					<div className="flex sm:flex sm:flex-row sm:gap-6 gap-2">
-						<span>INSTAGRAM</span>
-						<span>FACEBOOK</span>
-						<span>LINKEDIN</span>
-						<span>TWITTER</span>
+					<div className="flex gap-2 sm:flex sm:flex-row sm:gap-6">
+						<Link target="_blank" href="https://www.instagram.com/technicalclubrcoem/">
+							INSTAGRAM
+						</Link>
+						<Link target="_blank" href="https://www.facebook.com/technicalclubrcoem/">
+							FACEBOOK
+						</Link>
+						<Link target="_blank" href="https://www.linkedin.com/company/technicalclubrcoem/">
+							LINKEDIN
+						</Link>
+						<Link target="_blank" href="https://twitter.com/techclubrcoem/">
+							TWITTER
+						</Link>
 					</div>
-					{/* </div> */}
 				</div>
 			</div>
-			<div className="flex mt-5  sm:flex-col justify-center gap-2 sm:gap-10">
-				<div className="flex h-32 w-32 sm:h-48 sm:w-48 items-center justify-center rounded-full border bg-[#091F36]">
-					<p className="">Get In Touch</p>
-				</div>
-				<div className='flex flex-col'>
+			<div className="mt-5 flex  justify-center gap-2 sm:flex-col sm:gap-10">
+				<div className="flex flex-col">
 					<span>LOCATION</span>
 					<span className="w-48">
 						{' '}
