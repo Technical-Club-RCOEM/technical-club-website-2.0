@@ -7,6 +7,11 @@ import '../events/events.css';
 import img1 from '../components/img/img1.jpg';
 import photo1 from '../components/img/photo1.jpeg';
 import techSaga from '../components/img/ach/techsaga.jpg';
+import madhav from '../components/img/seniors/madhav.png';
+import techFest from '../components/img/seniors/duo.jpg';
+import vinayak from '../components/img/seniors/vinayak.jpg';
+import tanuj from '../components/img/seniors/tanuj.png';
+import gaurav from '../components/img/seniors/gaurav.jpg';
 
 const Achievements = () => {
 	const [curr, setCurr] = useState(0);
@@ -18,43 +23,38 @@ const Achievements = () => {
 			img: techSaga,
 		},
 		{
-			name: 'Hackanova 2.0 TCET Open Innovation',
-			img: img1,
+			name: 'IITB Techfest Meshmerize',
 			description: 'Winner ',
+			img: gaurav,
 		},
 		{
 			name: 'CodeFury ',
-			img: img1,
+			img: techSaga,
 			description: 'Winner',
 		},
 		{
 			name: 'Autocoders GCOEM ',
-			img: photo1,
+			img: madhav,
 			description: 'Winner ',
 		},
 		{
 			name: ' IITB Techfest Zonals code',
-			img: photo1,
+			img: techFest,
 			description: '3rd ',
 		},
 		{
 			name: ' Designex 2.0 VIT-AP',
-			img: photo1,
+			img: vinayak,
 			description: 'Winner ',
 		},
 		{
-			name: ' IISF-SIF (MANIT Bhopal) ',
-			img: photo1,
-			description: 'AIR 13th  ',
-		},
-		{
 			name: ' IDRL S7Ep6 @ Amalthea 2022, IIT Gandhinagar ',
-			img: photo1,
+			img: tanuj,
 			description: ' 7th position  ',
 		},
 		{
 			name: ' IDRL S7Ep8 @ Technex-23, SPVCET, Nagpur  ',
-			img: photo1,
+			img: tanuj,
 			description: '7th Position',
 		},
 	];
