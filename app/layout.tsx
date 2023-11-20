@@ -1,12 +1,11 @@
 import type { Metadata } from 'next';
-import { Oswald, Figtree } from 'next/font/google';
+import { Figtree } from 'next/font/google';
 import { Providers } from './providers';
 import { Navbar } from './components/Nav';
 import './globals.css';
 import Footer2 from './components/Footer2';
 
 const inter = Figtree({ weight: ['400'], subsets: ['latin'] });
-export const oswald = Oswald({ weight: ['400'], subsets: ['latin'] });
 
 export const metadata: Metadata = {
 	title: 'Technical Club',
