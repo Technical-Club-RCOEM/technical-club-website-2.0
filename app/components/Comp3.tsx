@@ -6,20 +6,29 @@ import { useState } from 'react';
 import left from './img/Arrow_left.svg';
 import right from './img/Arrow_right.svg';
 import { Button } from '@nextui-org/react';
+
+// image imports
+import harsheet from './img/seniors/harsheet.png';
+import madhav from './img/seniors/madhav.png';
+import sushant from './img/seniors/sushant.png';
+
 export default function Component() {
 	const [currentIndex, setCurrentIndex] = useState(0);
 	const children = [
 		{
-			content: 'Harsheet Bhaiyya',
-			img: 'https://images.unsplash.com/photo-1541963463532-d68292c34b19?auto=format&fit=crop&q=80&w=1000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Ym9va3xlbnwwfHwwfHx8MA%3D%3D',
+			content:
+				'TC is the most memorable part of my college life, made friends  and gained experiences for lifetime. Enjoyed the whole process with my TC family!!',
+			img: harsheet,
 		},
 		{
-			content: 'Aaliya Di',
-			img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwA4WjhEsYgWRVID6HZnfKwjrNKWzqw7nS5Q&usqp=CAU',
+			content:
+				'My very first club in college, tons of memories and learning. To all my TC juniors, have fun and learn a lot.',
+			img: madhav,
 		},
 		{
-			content: 'Madhav Bhaiyya',
-			img: 'https://images.unsplash.com/photo-1575936123452-b67c3203c357?auto=format&fit=crop&q=80&w=1000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8fDA%3D',
+			content:
+				"Happy to be part of TC. Met many W's and noobs , cooked sweet memories , all my fellas keep learning keep growing ;-)",
+			img: sushant,
 		},
 	];
 
@@ -38,23 +47,36 @@ export default function Component() {
 		}
 	};
 	return (
-		<div className="relative mt-48 flex flex-col h-60 w-1/2 items-center justify-center max-md:w-[90vw]">
+		<div className="relative mt-48 flex h-60 w-1/2 flex-col items-center justify-center max-md:w-[90vw]">
 			<Image src={shape} className="" alt="Logo" width={700} height={700} priority />
-			<div className="absolute -top-24 left-[15vw] max-md:-top-2 max-md:left-12">
-				<div className="photo1 absolute ml-6 md:-left-16 md:mb-10 aspect-[9/16] md:h-72 w-44 max-md:h-36 max-md:w-28">
-				<Image className="w-full bg-cover no-repeat items-center object-cover" src={children[currentIndex].img} alt="img" width={300} height={400} priority/>
-				</div>
-				<div className="absolute -bottom-[2rem] w-44 text-center text-sm text-black max-md:-bottom-[12rem] max-md:w-24">
-					Harsheet
-				</div>
+			<div className="absolute -top-12 left-[12vw] max-md:-top-28 max-md:left-auto max-md:flex max-md:flex-col max-md:justify-center">
+				<Image
+					className="photo1 no-repeat aspect-[9/12] h-60 w-full items-center object-cover max-md:h-44 md:-translate-x-4"
+					src={children[currentIndex].img}
+					alt="img"
+					width={300}
+					height={400}
+					priority
+				/>
 			</div>
-			<div className="absolute translate-x-24 max-md:translate-x-12 mb-12 ml-10">{children[currentIndex].content}</div>
-			{/* <div className="absolute l-12 w-1/3 translate-x-2 text-sm max-md:translate-x-12">{children[currentIndex].content}</div> */}
-			<div className='w-full flex justify-between items-center mx-10 relative top-44 md:top-0 '>
-				<Button isIconOnly variant="solid" className="z-10 -translate-y-16 bg-[#154a82] p-3" onClick={handleLeftClick}>
+			<div className="absolute mb-12 ml-10 w-1/3 translate-x-24 max-md:ml-1 max-md:flex max-md:w-[70vw] max-md:translate-x-0 max-md:translate-y-2 max-md:items-center max-md:justify-center max-md:text-center max-md:text-sm">
+				{children[currentIndex].content}
+			</div>
+			<div className="relative top-44 mx-10 flex w-full items-center justify-between md:top-0 ">
+				<Button
+					isIconOnly
+					variant="solid"
+					className="z-10 bg-[#154a82] p-3 max-md:-translate-y-36"
+					onClick={handleLeftClick}
+				>
 					<Image src={left} alt="arrow" width={200} height={200} priority />
 				</Button>
-				<Button isIconOnly variant="solid" className="z-10 -translate-y-16 bg-[#154a82] p-3" onClick={handleRightClick}>
+				<Button
+					isIconOnly
+					variant="solid"
+					className="z-10 bg-[#154a82] p-3 max-md:-translate-y-36"
+					onClick={handleRightClick}
+				>
 					<Image src={right} alt="arrow" width={200} height={200} priority />
 				</Button>
 			</div>

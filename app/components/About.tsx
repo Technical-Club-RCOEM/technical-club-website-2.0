@@ -36,7 +36,7 @@ export default function About() {
 					</div>
 				</div>
 			</div>
-			<div className="h-[80vh] bg-[#091f36] py-16 flex flex-col justify-start items-center">
+			<div className="h-[80vh] max-md:h-[100vh] bg-[#091f36] py-16 flex flex-col justify-start items-center">
 				<div className={'text-center text-8xl text-white max-md:text-5xl ' + roboto_slab.className}>
 					<p className="font-light">
 						Why to <span className="font-bold">Technical Club</span>?
