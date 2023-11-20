@@ -1,7 +1,8 @@
 'use client';
 import React, { useState } from 'react';
 import Box, { BoxProps } from './box';
-import img1 from '../components/img/img1.jpg';
+import img1 from '../components/img/events_img.jpg';
+import img2 from '../components/img/events_img2.jpg';
 import Image from 'next/image';
 import './events.css';
 import { Button } from '@nextui-org/react';
@@ -82,7 +83,7 @@ export default function Events() {
 						/>
 
 						<Image
-							src={img1}
+							src={img2}
 							className="events-title-image ml-2 border-4 border-black lg:rounded-br-[100px] lg:rounded-tl-[100px] lg:rounded-tr-[100px]"
 							alt="Logo"
 							width={350}
@@ -90,7 +91,7 @@ export default function Events() {
 							priority
 						/>
 						<Image
-							src={img1}
+							src={detech}
 							className="events-title-image ml-2 border-4 border-black lg:rounded-br-[100px] lg:rounded-tl-[100px] lg:rounded-tr-[100px]"
 							alt="Logo"
 							width={350}
