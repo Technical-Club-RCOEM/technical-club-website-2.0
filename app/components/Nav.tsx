@@ -45,12 +45,7 @@ export function Navbar() {
 					</Link>
 					<Link
 						color={path === '/events' ? 'primary' : 'foreground'}
-						href={
-							path === '/events'
-								? '#'
-								: `\
-						${BASE}/events`
-						}
+						href={path === '/events' ? '#' : `${BASE}events`}
 						aria-current="page"
 						className="w-[90vw] border-b-2 text-2xl font-normal"
 					>
@@ -58,7 +53,7 @@ export function Navbar() {
 					</Link>
 					<Link
 						color={path === '/achievements' ? 'primary' : 'foreground'}
-						href={path === '/achievements' ? '#' : `${BASE}/achievements`}
+						href={path === '/achievements' ? '#' : `${BASE}achievements`}
 						className="w-[90vw] border-b-2 text-2xl font-normal"
 					>
 						Achievements
@@ -78,12 +73,7 @@ export function Navbar() {
 				<NavbarItem>
 					<Link
 						color={path === '/events' ? 'primary' : 'foreground'}
-						href={
-							path === '/events'
-								? '#'
-								: `\
-						${BASE}/events`
-						}
+						href={path === '/events' ? '#' : `${BASE}events`}
 						aria-current="page"
 					>
 						Events
@@ -92,7 +82,7 @@ export function Navbar() {
 				<NavbarItem>
 					<Link
 						color={path === '/achievements' ? 'primary' : 'foreground'}
-						href={path === '/achievements' ? '#' : `${BASE}/achievements`}
+						href={path === '/achievements' ? '#' : `${BASE}achievements`}
 					>
 						Achievements
 					</Link>

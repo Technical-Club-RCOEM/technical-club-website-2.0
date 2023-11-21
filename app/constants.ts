@@ -1,1 +1,1 @@
-export const BASE = ''
+export const BASE = '/'
